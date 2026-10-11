@@ -101,6 +101,15 @@ section{padding-block:clamp(48px,8vw,96px)}
 .standings th{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
 .standings td.r,.standings th.r{text-align:right;font-variant-numeric:tabular-nums}
 .standings tr.us td{font-weight:700;color:var(--red)}
+/* sponsors */
+.sponsors{margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.sponsor{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.sponsor .logo{background:#fff;height:180px;display:flex;align-items:center;justify-content:center;padding:16px}
+.sponsor .logo img{max-height:100%;max-width:100%;object-fit:contain}
+.sponsor .body{padding:16px 18px}
+.sponsor h3{margin:0 0 4px;font-size:1.1rem}
+.sponsor p{margin:0 0 8px;color:var(--ink-soft);font-size:.95rem}
+.sponsor a{color:var(--red)}
 /* squad */
 .tabs{display:flex;gap:8px;margin-top:32px;flex-wrap:wrap}
 .tabs button{font:600 1rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 18px;cursor:pointer}
@@ -151,6 +160,7 @@ footer li{margin-bottom:6px}
       <a href="#xronies">Χρονιές</a>
       <a href="#omada">Φετινή ομάδα</a>
       <a href="#agones">Αγώνες</a>
+      <a href="#xorigoi">Χορηγοί</a>
     </nav>
   </div>
 </header>
@@ -280,6 +290,31 @@ footer li{margin-bottom:6px}
     </table>
     <p class="note">Μετά τους αγώνες του Σαββάτου 10/10· δεν περιλαμβάνει το Γλυφάδα – Αστέρας Ιτέας (11/10). Οι αστερίσκοι όπως στην πηγή (πιθανώς ομάδες με λιγότερους αγώνες). Πηγή: <a href="https://starsports.gr/2026/10/10/a-fokidas-isopalo-to-ntermpi-sti-gravia-eftase-gia-apollona-kai-oianthi/">starsports.gr, 10/10/2026</a>.</p>
     <p class="note">Η βαθμολογία ενημερώνεται στο <a href="https://starsports.gr/vathmologies/a-fokidas/">starsports.gr</a> και στην <a href="https://epsfokidas.gr/?cat=96">ΕΠΣ Φωκίδας</a>.</p>
+  </div>
+</section>
+
+<section id="xorigoi" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Στηρίζουν την Οιάνθη</p>
+    <h2>Χορηγοί</h2>
+    <div class="sponsors">
+      <article class="sponsor">
+        <div class="logo"><img src="img/xorigos-gkiatis.png" alt="Λογότυπο Γκιάτης Γιάννης Ανακαινίσεις"></div>
+        <div class="body">
+          <h3>Γκιάτης Γιάννης</h3>
+          <p>Ανακαινίσεις, αναπαλαιώσεις κατοικιών και real estate · Γαλαξίδι</p>
+          <p><a href="tel:+306972359173">697 235 9173</a> · <a href="https://www.facebook.com/GkiatisGiannisAnakainiseis/">Facebook</a></p>
+        </div>
+      </article>
+      <article class="sponsor">
+        <div class="logo"><img src="img/xorigos-skeletovrachos.jpg" alt="Λογότυπο εστιατορίου Σκελετόβραχος"></div>
+        <div class="body">
+          <h3>Σκελετόβραχος</h3>
+          <p>Εστιατόριο · Ακτή Οιάνθης 91, Γαλαξίδι</p>
+          <p><a href="tel:+302265041303">22650 41303</a> · <a href="tel:+306936319445">693 631 9445</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%91%CE%BA%CF%84%CE%AE+%CE%9F%CE%B9%CE%AC%CE%BD%CE%B8%CE%B7%CF%82+91+%CE%93%CE%B1%CE%BB%CE%B1%CE%BE%CE%AF%CE%B4%CE%B9">Χάρτης</a></p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
