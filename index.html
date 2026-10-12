@@ -135,19 +135,13 @@ section{padding-block:clamp(48px,8vw,96px)}
 .next .head{background:var(--navy);color:#fff;padding:22px 24px}
 .next .when{font-size:.95rem;opacity:.85}
 .next .vs{font-family:var(--display);font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.15;margin-top:6px}
-.next .grid{display:grid;grid-template-columns:3fr 2fr;gap:0}
+.next .grid{display:grid;grid-template-columns:1fr;gap:0}
 .next .col{padding:22px 24px}
-.next .col+.col{border-left:1px solid var(--line)}
 .next h3{font-size:1.25rem;margin-bottom:12px}
-.xi{list-style:none;margin:0;padding:0}
-.xi li{display:grid;grid-template-columns:2.4em 1fr auto;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.xi .n{font-family:var(--display);font-size:1.15rem}
-.xi .p{color:var(--ink-soft);font-size:.9rem}
-.refs{margin:0}
+.refs{margin:0;max-width:520px}
 .refs div{padding:7px 0;border-bottom:1px solid var(--line)}
 .refs dt{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
 .refs dd{margin:2px 0 0}
-@media (max-width:700px){.next .grid{grid-template-columns:1fr}.next .col+.col{border-left:0;border-top:1px solid var(--line)}}
 
 /* results */
 .results{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px}
@@ -296,23 +290,6 @@ footer li{margin-bottom:6px}
       </div>
       <div class="grid">
         <div class="col">
-          <h3>Η ενδεκάδα</h3>
-          <ul class="xi">
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Τερματοφύλακας</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Δεξί μπακ</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Κεντρικός αμυντικός</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Κεντρικός αμυντικός</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Αριστερό μπακ</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Δεξί άκρο</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Αριστερό άκρο</span></li>
-          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Επιθετικός</span></li>
-          </ul>
-          <p class="note">Αναπληρωματικοί: <span class="todo">;</span><br>Προπονητής: <span class="todo">;</span></p>
-        </div>
-        <div class="col">
           <h3>Διαιτητές</h3>
           <dl class="refs">
             <div><dt>Διαιτητής</dt><dd><span class="todo">;</span></dd></div>
@@ -320,7 +297,7 @@ footer li{margin-bottom:6px}
             <div><dt>2ος βοηθός</dt><dd><span class="todo">;</span></dd></div>
             <div><dt>Παρατηρητής</dt><dd><span class="todo">;</span></dd></div>
           </dl>
-          <p class="note">Η ενδεκάδα και οι διαιτητές ανακοινώνονται από την ομάδα πριν τον αγώνα.</p>
+          <p class="note">Οι διαιτητές ανακοινώνονται από την ομάδα πριν τον αγώνα.</p>
         </div>
       </div>
     </article>
