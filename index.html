@@ -130,6 +130,25 @@ section{padding-block:clamp(48px,8vw,96px)}
 }
 [hidden]{display:none!important}
 
+/* next match */
+.next{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.next .head{background:var(--navy);color:#fff;padding:22px 24px}
+.next .when{font-size:.95rem;opacity:.85}
+.next .vs{font-family:var(--display);font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.15;margin-top:6px}
+.next .grid{display:grid;grid-template-columns:3fr 2fr;gap:0}
+.next .col{padding:22px 24px}
+.next .col+.col{border-left:1px solid var(--line)}
+.next h3{font-size:1.25rem;margin-bottom:12px}
+.xi{list-style:none;margin:0;padding:0}
+.xi li{display:grid;grid-template-columns:2.4em 1fr auto;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.xi .n{font-family:var(--display);font-size:1.15rem}
+.xi .p{color:var(--ink-soft);font-size:.9rem}
+.refs{margin:0}
+.refs div{padding:7px 0;border-bottom:1px solid var(--line)}
+.refs dt{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.refs dd{margin:2px 0 0}
+@media (max-width:700px){.next .grid{grid-template-columns:1fr}.next .col+.col{border-left:0;border-top:1px solid var(--line)}}
+
 /* results */
 .results{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px}
 .results li{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px}
@@ -159,6 +178,7 @@ footer li{margin-bottom:6px}
       <a href="#istoria">Ιστορία</a>
       <a href="#xronies">Χρονιές</a>
       <a href="#omada">Φετινή ομάδα</a>
+      <a href="#epomenos">Επόμενος αγώνας</a>
       <a href="#agones">Αγώνες</a>
       <a href="#xorigoi">Χορηγοί</a>
     </nav>
@@ -265,6 +285,49 @@ footer li{margin-bottom:6px}
   </div>
 </section>
 
+<section id="epomenos">
+  <div class="wrap">
+    <p class="eyebrow">Α΄ Φωκίδας · 4η αγωνιστική</p>
+    <h2>Επόμενος αγώνας</h2>
+    <article class="next">
+      <div class="head">
+        <p class="when">Σάββατο 17 Οκτωβρίου · <span class="todo">16:00;</span> · Δημοτικό γήπεδο Γαλαξειδίου</p>
+        <p class="vs">Οιάνθη – Απόλλων Ευπαλίου</p>
+      </div>
+      <div class="grid">
+        <div class="col">
+          <h3>Η ενδεκάδα</h3>
+          <ul class="xi">
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Τερματοφύλακας</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Δεξί μπακ</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Κεντρικός αμυντικός</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Κεντρικός αμυντικός</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Αριστερό μπακ</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Μέσος</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Δεξί άκρο</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Αριστερό άκρο</span></li>
+          <li><span class="n">–</span><span><span class="todo">Όνομα</span></span><span class="p">Επιθετικός</span></li>
+          </ul>
+          <p class="note">Αναπληρωματικοί: <span class="todo">;</span><br>Προπονητής: <span class="todo">;</span></p>
+        </div>
+        <div class="col">
+          <h3>Διαιτητές</h3>
+          <dl class="refs">
+            <div><dt>Διαιτητής</dt><dd><span class="todo">;</span></dd></div>
+            <div><dt>1ος βοηθός</dt><dd><span class="todo">;</span></dd></div>
+            <div><dt>2ος βοηθός</dt><dd><span class="todo">;</span></dd></div>
+            <div><dt>Παρατηρητής</dt><dd><span class="todo">;</span></dd></div>
+          </dl>
+          <p class="note">Η ενδεκάδα και οι διαιτητές ανακοινώνονται από την ομάδα πριν τον αγώνα.</p>
+        </div>
+      </div>
+    </article>
+    <p class="note">Πρόγραμμα: <a href="https://starsports.gr/2026/10/11/a-fokidas-oloklirothike-i-3i-agonistiki">starsports.gr, 11/10/2026</a>.</p>
+  </div>
+</section>
+
 <section id="agones">
   <div class="wrap">
     <p class="eyebrow">Α΄ Φωκίδας 2026–27</p>
@@ -281,14 +344,14 @@ footer li{margin-bottom:6px}
         <tr><td class="r">1</td><td>Ανδρούτσος Γραβιάς</td><td class="r">7</td></tr>
         <tr><td class="r">2</td><td>Απόλλων Ευπαλίου</td><td class="r">6*</td></tr>
         <tr><td class="r">3</td><td>Ησαΐας Δεσφίνας</td><td class="r">4*</td></tr>
-        <tr><td class="r">4</td><td>Γλυφάδα</td><td class="r">3*</td></tr>
+        <tr><td class="r">4</td><td>Γλυφάδα</td><td class="r">4</td></tr>
         <tr><td class="r">5</td><td>Ακαδ. Ποδ. Ιτέας</td><td class="r">3*</td></tr>
         <tr class="us"><td class="r">6</td><td>Οιάνθη Γαλαξιδίου</td><td class="r">3</td></tr>
-        <tr><td class="r">7</td><td>Αστέρας Ιτέας</td><td class="r">0**</td></tr>
+        <tr><td class="r">7</td><td>Αστέρας Ιτέας</td><td class="r">1*</td></tr>
         <tr><td class="r">8</td><td>Ακαδημία '94</td><td class="r">0</td></tr>
       </tbody>
     </table>
-    <p class="note">Μετά τους αγώνες του Σαββάτου 10/10· δεν περιλαμβάνει το Γλυφάδα – Αστέρας Ιτέας (11/10). Οι αστερίσκοι όπως στην πηγή (πιθανώς ομάδες με λιγότερους αγώνες). Πηγή: <a href="https://starsports.gr/2026/10/10/a-fokidas-isopalo-to-ntermpi-sti-gravia-eftase-gia-apollona-kai-oianthi/">starsports.gr, 10/10/2026</a>.</p>
+    <p class="note">Μαζί με το Γλυφάδα – Αστέρας Ιτέας 0–0 (11/10). Οι αστερίσκοι όπως στην πηγή (πιθανώς ομάδες με λιγότερους αγώνες). Πηγή: <a href="https://starsports.gr/2026/10/11/a-fokidas-oloklirothike-i-3i-agonistiki">starsports.gr, 11/10/2026</a>.</p>
     <p class="note">Η βαθμολογία ενημερώνεται στο <a href="https://starsports.gr/vathmologies/a-fokidas/">starsports.gr</a> και στην <a href="https://epsfokidas.gr/?cat=96">ΕΠΣ Φωκίδας</a>.</p>
   </div>
 </section>
@@ -337,6 +400,7 @@ footer li{margin-bottom:6px}
       <li><a href="https://el.wikipedia.org/wiki/%CE%88%CE%BD%CF%89%CF%83%CE%B7_%CE%A0%CE%BF%CE%B4%CE%BF%CF%83%CF%86%CE%B1%CE%B9%CF%81%CE%B9%CE%BA%CF%8E%CE%BD_%CE%A3%CF%89%CE%BC%CE%B1%CF%84%CE%B5%CE%AF%CF%89%CE%BD_%CE%A6%CF%89%CE%BA%CE%AF%CE%B4%CE%B1%CF%82">Βικιπαίδεια: Ένωση Ποδοσφαιρικών Σωματείων Φωκίδας</a> (πρωταθλήματα, τελικοί κυπέλλου)</li>
       <li>Βικιπαίδεια: Διοργανώσεις ΕΠΣ Φωκίδας <a href="https://el.wikipedia.org/wiki/Διοργανώσεις_Ε.Π.Σ._Φωκίδας_1989–90">1989–90</a>, <a href="https://el.wikipedia.org/wiki/%CE%94%CE%B9%CE%BF%CF%81%CE%B3%CE%B1%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82_%CE%95.%CE%A0.%CE%A3._%CE%A6%CF%89%CE%BA%CE%AF%CE%B4%CE%B1%CF%82_2011%E2%80%9312">2011–12</a>, <a href="https://el.wikipedia.org/wiki/%CE%94%CE%B9%CE%BF%CF%81%CE%B3%CE%B1%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82_%CE%95.%CE%A0.%CE%A3._%CE%A6%CF%89%CE%BA%CE%AF%CE%B4%CE%B1%CF%82_2013%E2%80%9314">2013–14</a></li>
       <li><a href="https://starsports.gr/2025/10/13/eps-fokidas-kypello-prokrithikan-stin-epomeni-fasi-oianthi-kai-isaias/">starsports.gr, 13/10/2025</a> (Κύπελλο, 4–1 Αστέρα Ιτέας)</li>
+      <li><a href="https://starsports.gr/2026/10/11/a-fokidas-oloklirothike-i-3i-agonistiki">starsports.gr, 11/10/2026</a> (βαθμολογία μετά την 3η, πρόγραμμα 4ης)</li>
       <li><a href="https://starsports.gr/2026/10/10/a-fokidas-isopalo-to-ntermpi-sti-gravia-eftase-gia-apollona-kai-oianthi/">starsports.gr, 10/10/2026</a> (3η αγωνιστική και βαθμολογία)</li>
       <li><a href="https://starsports.gr/2026/10/04/a-fokidas-oloklirothike-i-2i-agonistiki/">starsports.gr, 04/10/2026</a> (2η αγωνιστική και βαθμολογία)</li>
       <li><a href="https://starsports.gr/2026/09/26/o-odysseas-androutsos-tin-niki-stin-premiera-tis-a-fokidas/">starsports.gr, 26/09/2026</a> (πρεμιέρα Α΄ Φωκίδας)</li>
