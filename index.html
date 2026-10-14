@@ -171,6 +171,12 @@ section{padding-block:clamp(48px,8vw,96px)}
 @media (max-width:600px){.results li{grid-template-columns:1fr auto}.results .d{grid-column:1/-1}}
 
 /* call */
+.card-pass{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:center;margin-top:32px}
+.card-pass img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(20,40,75,.25)}
+.card-pass dl{margin:16px 0 0;display:grid;gap:12px}
+.card-pass dt{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+.card-pass dd{margin:2px 0 0;font-size:1.1rem}
+@media (max-width:700px){.card-pass{grid-template-columns:1fr}}
 .call{background:var(--navy);color:#fff}
 .call .lead{color:#fff;opacity:.85}
 .call a.btn{display:inline-block;margin-top:24px;background:var(--red);color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:14px 24px}
@@ -192,6 +198,7 @@ footer li{margin-bottom:6px}
       <a href="#xronies">Χρονιές</a>
       <a href="#omada">Φετινή ομάδα</a>
       <a href="#epomenos">Επόμενος αγώνας</a>
+      <a href="#karta">Κάρτα διαρκείας</a>
       <a href="#agones">Αγώνες</a>
       <a href="#xorigoi">Χορηγοί</a>
     </nav>
@@ -321,6 +328,23 @@ footer li{margin-bottom:6px}
       </div>
     </article>
     <p class="note">Πρόγραμμα: <a href="https://starsports.gr/2026/10/11/a-fokidas-oloklirothike-i-3i-agonistiki">starsports.gr, 11/10/2026</a>.</p>
+  </div>
+</section>
+
+<section id="karta" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Σεζόν 2026–27</p>
+    <h2>Κάρτα διαρκείας</h2>
+    <div class="card-pass">
+      <img src="img/karta-diarkeias-2026-27.jpg" alt="Η κάρτα διαρκείας 2026–2027 της ΠΑΣ Οιάνθη Γαλαξειδίου: «Μια ομάδα, ένα όραμα»" width="1400" height="933" loading="lazy">
+      <div>
+        <p class="lead">«Μια ομάδα, ένα όραμα». Με την κάρτα διαρκείας στηρίζετε την ομάδα όλη τη χρονιά.</p>
+        <dl>
+          <div><dt>Τιμή</dt><dd>20 €</dd></div>
+          <div><dt>Πού τη βρίσκετε</dt><dd><span class="todo">σημεία παραλαβής;</span></dd></div>
+        </dl>
+      </div>
+    </div>
   </div>
 </section>
 
